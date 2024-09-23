@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66ec903bbf3458523e79593d_30a1eecd-9059-4386-b513-f78b107d5d1d",
+  "id": "Page1_calcolaFlussi",
+  "unpublishedCollection": {
+    "name": "calcolaFlussi",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "_startsFlussoMV10082012",
+        "value": "{\n  regione: {\n    id: 1,\n    length: 3,\n    type: \"string\",\n    required: true\n  },\n  asID: {\n    id: 2,\n    length: 3,\n    type: \"string\",\n    required: true\n  },\n  arseID: {\n    id: 3,\n    length: 6,\n    type: \"string\",\n    required: true\n  },\n  brancaID: {\n    id: 4,\n    length: 2,\n    type: \"int\",\n    required: true\n  },\n  mpID: {\n    id: 5,\n    length: 16,\n    type: \"string\",\n    required: true\n  },\n  cognome: {\n    id: 6,\n    length: 30,\n    type: \"string\",\n    required: false\n  },\n  nome: {\n    id: 7,\n    length: 20,\n    type: \"string\",\n    required: false\n  },\n  cf: {\n    id: 8,\n    length: 16,\n    type: \"string\",\n    required: true\n  },\n  sesso: {\n    id: 9,\n    length: 1,\n    type: \"string\",\n    required: false\n  },\n  dataNascita: {\n    id: 10,\n    length: 8,\n    type: \"date\",\n    required: false\n  },\n  comRes: {\n    id: 11,\n    length: 6,\n    type: \"string\",\n    required: true\n  },\n  aspRes: {\n    id: 12,\n    length: 3,\n    type: \"string\",\n    required: true\n  },\n  dataPren: {\n    id: 13,\n    length: 8,\n    type: \"date\",\n    required: true\n  },\n  ricettaID: {\n    id: 14,\n    length: 16,\n    type: \"string\",\n    required: true\n  },\n  progrRicetta: {\n    id: 15,\n    length: 2,\n    type: \"string\",\n    required: true\n  },\n  diagnosi: {\n    id: 16,\n    length: 5,\n    type: \"string\",\n    required: false\n  },\n  dataErog: {\n    id: 17,\n    length: 8,\n    type: \"date\",\n    required: true\n  },\n  nomID: {\n    id: 18,\n    length: 1,\n    type: \"string\",\n    required: true\n  },\n  prestID: {\n    id: 19,\n    length: 7,\n    type: \"string\",\n    required: true\n  },\n  quant: {\n    id: 20,\n    length: 3,\n    type: \"int\",\n    required: true\n  },\n  ticket: {\n    id: 21,\n    length: 2,\n    type: \"double\",\n    required: true\n  },\n  esenzione: {\n    id: 22,\n    length: 6,\n    type: \"string\",\n    required: true\n  },\n  importoTicket: {\n    id: 23,\n    length: 7,\n    type: \"double\",\n    required: true\n  },\n  totale: {\n    id: 24,\n    length: 8,\n    type: \"double\",\n    required: true\n  },\n  posContabile: {\n    id: 25,\n    length: 1,\n    type: \"string\",\n    required: true\n  },\n  recordID: {\n    id: 26,\n    length: 20,\n    type: \"string\",\n    required: true\n  },\n  CRIL: {\n    id: 27,\n    length: 8,\n    type: \"string\",\n    required: true\n  },\n  op: {\n    id: 28,\n    length: 1,\n    type: \"string\",\n    required: true\n  },\n  tipoAccesso: {\n    id: 29,\n    length: 1,\n    type: \"string\",\n    required: true\n  },\n  tempoMax: {\n    id: 30,\n    length: 1,\n    type: \"string\",\n    required: true\n  },\n  classePrior: {\n    id: 31,\n    length: 1,\n    type: \"string\",\n    required: true\n  },\n  vuoto: {\n    id: 32,\n    length: 2,\n    type: \"string\",\n    required: false\n  }\n}"
+      }
+    ]
+  }
+}

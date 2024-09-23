@@ -1,0 +1,10 @@
+{
+  "accessor": [
+    "base"
+  ],
+  "defs": "{\"!name\":\"LIB/base\",\"base\":{\"encode\":{\"!type\":\"fn()\",\"prototype\":{}},\"decode\":{\"!type\":\"fn()\",\"prototype\":{}},\"version\":{\"!type\":\"string\"}}}",
+  "name": "base",
+  "uidString": "base_https://cdn.jsdelivr.net/npm/base-64@1.0.0/+esm",
+  "url": "https://cdn.jsdelivr.net/npm/base-64@1.0.0/+esm",
+  "version": "1.0.0"
+}

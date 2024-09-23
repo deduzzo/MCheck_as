@@ -1,0 +1,10 @@
+{
+  "accessor": [
+    "utf"
+  ],
+  "defs": "{\"!name\":\"LIB/utf\",\"utf\":{\"version\":{\"!type\":\"string\"},\"encode\":{\"!type\":\"fn()\",\"prototype\":{}},\"decode\":{\"!type\":\"fn()\",\"prototype\":{}}}}",
+  "name": "utf",
+  "uidString": "utf_https://cdn.jsdelivr.net/npm/utf8@3.0.0/+esm",
+  "url": "https://cdn.jsdelivr.net/npm/utf8@3.0.0/+esm",
+  "version": "3.0.0"
+}
