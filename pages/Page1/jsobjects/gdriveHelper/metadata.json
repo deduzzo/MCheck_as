@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66ec903bbf3458523e79593d_d07a6871-0a39-4493-b5ae-2da907423d47",
+  "id": "Page1_gdriveHelper",
+  "unpublishedCollection": {
+    "name": "gdriveHelper",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "lastAuthCode",
+        "value": "null"
+      },
+      {
+        "name": "dataPath",
+        "value": "\"189yNA2NUbplJjAHTcl3N71beARIBCjvN\""
+      }
+    ]
+  }
+}

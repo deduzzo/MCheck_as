@@ -42,7 +42,7 @@
   "mobileRightColumn": 16,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onFilesSelected": "{{ flussiHelper.elaboraFlussi()\n}}",
+  "onFilesSelected": "{{ uploadFileToGdrive.run()\n}}",
   "parentColumnSpace": 16.8125,
   "parentId": "0",
   "parentRowSpace": 10,

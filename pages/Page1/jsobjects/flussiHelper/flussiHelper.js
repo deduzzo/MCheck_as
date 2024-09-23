@@ -23,4 +23,5 @@ export default {
 		let outData = calcolaFlussi.ottieniStatDaFileFlussoM(convertedString,"340260224M.TXT");
 		console.log(outData);
 	},
+	
 }
