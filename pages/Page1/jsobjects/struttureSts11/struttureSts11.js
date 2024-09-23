@@ -10,7 +10,7 @@ export default {
                     codiceAzienda: p['Codice Azienda'],
                     denominazione: p['Denominazione struttura'],
                     codiceComune: '0' + p['Codice Comune'],
-                    idDistretto: datiMessina.comuniDistretti[p["Codice Comune"]],
+                    idDistretto: datiMessina.comuniDistretti['0' + p["Codice Comune"]],
                 };
             } else
                 mancanti.push(p);

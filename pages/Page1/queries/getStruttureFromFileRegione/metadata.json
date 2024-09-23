@@ -85,7 +85,7 @@
       "pluginId": "google-sheets-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "getStruttureFromFileRegione",
     "pageId": "Page1",
     "userSetOnLoad": false

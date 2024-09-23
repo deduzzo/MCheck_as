@@ -20,10 +20,10 @@ export default {
 	},
 	elaboraFlussi (){
 		const convertedString = this.base64Decode(FilePicker1.files[0].data);
-		let outData = calcolaFlussi.ottieniStatDaFileFlussoM(convertedString,"340260224M.TXT");
-		console.log(outData);
+		let outData = calcolaFlussi.ottieniStatDaFileFlussoM(convertedString,FilePicker1.files[0].name);
+		return outData;
 	},
 	 generateHash (text) {
-		 return crypto_js.MD5(text);
+		 return crypto_js.MD5(text).toString(crypto_js.enc.Hex);
 	 }
 }

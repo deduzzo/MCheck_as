@@ -182,18 +182,11 @@ export default {
     return obj;
 },
 _getLinesFromBase64File(text) {
-
   let percentEncodedStr = '';
-  for (let i = 0; i < text.length; i++) {
+  for (let i = 0; i < text.length; i++)
     percentEncodedStr += '%' + ('00' + text.charCodeAt(i).toString(16)).slice(-2);
-  }
-
-  // Decodifica la stringa percent-encoded in UTF-8
   const decodedString = decodeURIComponent(percentEncodedStr);
-
-  // Splitta la stringa decodificata in un array di linee
   const linesArray = decodedString.split(/\r?\n/); // Gestisce sia \n che \r\n
-
   return linesArray;
 },
 	_elaboraFileFlussoM(fileContent, fileName) {
