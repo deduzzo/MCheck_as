@@ -33,9 +33,6 @@ export default {
         classePrior: {id: 31, length: 1, type: "string", required: true}, // Classe priorità
         vuoto: {id: 32, length: 2, type: "string", required: false}, // campo vuoto
     },
-	_loadStruttureFromFlowlookDB() {
-		return null;
-	},
 	_checkMeseAnnoStruttura(ricette) {
         //chiave: mmAAAA, count: ?
         let datePrestazioni = {}
@@ -139,7 +136,7 @@ export default {
         };
     },
 	ottieniStatDaFileFlussoM(fileContent, fileName, includiRicette = false) {
-        let strutture = this._loadStruttureFromFlowlookDB();
+        let strutture = struttureSts11.getStruttureMap();
         let ricetteInFile = this._elaboraFileFlussoM(fileContent, fileName);
         let warn = "";
         if (ricetteInFile.error) {
@@ -149,16 +146,16 @@ export default {
             let verificaDateStruttura = this._checkMeseAnnoStruttura(Object.values(ricetteInFile.ricette))
             ricetteInFile.codiceStruttura = verificaDateStruttura.codiceStruttura;
             ricetteInFile.file = fileName;
-            ricetteInFile.idDistretto = null; //strutture[verificaDateStruttura.codiceStruttura]?.idDistretto.toString() ?? (ricetteInFile.datiDaFile?.idDistretto ?? "X");
+            ricetteInFile.idDistretto = strutture[verificaDateStruttura.codiceStruttura]?.idDistretto.toString() ?? (ricetteInFile.datiDaFile?.idDistretto ?? "X");
             ricetteInFile.annoPrevalente = verificaDateStruttura.meseAnnoPrevalente.substr(2, 4);
             ricetteInFile.mesePrevalente = verificaDateStruttura.meseAnnoPrevalente.substr(0, 2);
             ricetteInFile.date = _.omitBy(verificaDateStruttura.date, _.isNil);
 					if (!includiRicette)
 						delete ricetteInFile.ricette;
-            //if (!strutture.hasOwnProperty(verificaDateStruttura.codiceStruttura)) {
-            //    console.log("STRUTTURA " + verificaDateStruttura.codiceStruttura + " non presente sul FLOWLOOK")
-            //    warn = "STRUTTURA " + verificaDateStruttura.codiceStruttura + " non presente sul FLOWLOOK"
-            //}
+            if (!strutture.hasOwnProperty(verificaDateStruttura.codiceStruttura)) {
+                console.log("STRUTTURA " + verificaDateStruttura.codiceStruttura + " non presente sul FLOWLOOK")
+                warn = "STRUTTURA " + verificaDateStruttura.codiceStruttura + " non presente sul FLOWLOOK"
+            }
             return {errore: false, warning: (warn === "" ? false : warn), out: ricetteInFile}
         }
     },
@@ -184,7 +181,7 @@ export default {
     }
     return obj;
 },
-getLinesFromBase64File(text) {
+_getLinesFromBase64File(text) {
 
   let percentEncodedStr = '';
   for (let i = 0; i < text.length; i++) {
@@ -215,7 +212,7 @@ getLinesFromBase64File(text) {
         let prestMap = {}
         let lunghezzaRiga = this._verificaLunghezzaRiga(this._startsFlussoMV10082012);
         let error = null;
-			  const arrayOfRows = this.getLinesFromBase64File(fileContent);
+			  const arrayOfRows = this._getLinesFromBase64File(fileContent);
 				const righeTotali = arrayOfRows.length;
         while (i<righeTotali) {
 					const nextLine = arrayOfRows[i];
@@ -259,6 +256,7 @@ getLinesFromBase64File(text) {
             let calcolaPrestazioniPerMese = this._totaliMeseAnnoStruttura(Object.values(ricette))
             return {
                 nomeFile: fileName,
+							  md5: flussiHelper.generateHash(fileContent),
                 datiDaFile: datiDaFile,
                 totaleNetto: totale.totale,
                 totaleLordo: parseFloat((totale.totale + totale.ticket).toFixed(2)),

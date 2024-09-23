@@ -23,5 +23,7 @@ export default {
 		let outData = calcolaFlussi.ottieniStatDaFileFlussoM(convertedString,"340260224M.TXT");
 		console.log(outData);
 	},
-	
+	 generateHash (text) {
+		 return crypto_js.MD5(text);
+	 }
 }

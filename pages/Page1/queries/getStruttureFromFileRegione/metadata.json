@@ -1,6 +1,6 @@
 {
   "gitSyncId": "66ec903bbf3458523e79593d_9d29a1b1-206a-403b-a570-9e0c59e5d014",
-  "id": "Page1_Api1",
+  "id": "Page1_getStruttureFromFileRegione",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -15,7 +15,7 @@
         },
         "pagination": {
           "data": {
-            "limit": "",
+            "limit": "1000",
             "offset": "0"
           }
         },
@@ -29,7 +29,7 @@
           "data": ""
         },
         "sheetName": {
-          "data": "Foglio1"
+          "data": "data"
         },
         "sheetUrl": {
           "componentData": "",
@@ -43,8 +43,8 @@
         "sortBy": {
           "data": [
             {
-              "column": "",
-              "order": "Ascending"
+              "column": "Anno",
+              "order": "Descending"
             }
           ]
         },
@@ -55,7 +55,19 @@
           "data": {
             "children": [
               {
-                "condition": "LT"
+                "condition": "EQ",
+                "key": "Codice Regione",
+                "value": "190"
+              },
+              {
+                "condition": "EQ",
+                "key": "Codice Azienda",
+                "value": "205"
+              },
+              {
+                "condition": "GT",
+                "key": "Anno",
+                "value": "2021"
               }
             ],
             "condition": "AND"
@@ -73,8 +85,8 @@
       "pluginId": "google-sheets-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
-    "name": "Api1",
+    "executeOnLoad": true,
+    "name": "getStruttureFromFileRegione",
     "pageId": "Page1",
     "userSetOnLoad": false
   }
