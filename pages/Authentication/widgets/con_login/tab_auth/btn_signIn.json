@@ -13,6 +13,17 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -24,14 +35,14 @@
   "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
   "isDefaultClickDisabled": true,
   "isDeprecated": false,
-  "isDisabled": false,
+  "isDisabled": "{{inp_username.text.trim() === \"\" || inp_password.text.trim() === \"\" }}",
   "isLoading": false,
   "isVisible": true,
   "key": "d80868s2dr",
   "leftColumn": 1,
-  "onClick": "{{functions.signIn();}}",
-  "originalBottomRow": 56,
-  "originalTopRow": 50,
+  "onClick": "{{functions.signIn()}}",
+  "originalBottomRow": 49,
+  "originalTopRow": 43,
   "parentColumnSpace": 18.1875,
   "parentId": "8rq3ao3yqz",
   "parentRowSpace": 10,

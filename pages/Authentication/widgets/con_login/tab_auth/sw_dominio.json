@@ -18,7 +18,7 @@
   "key": "8syibyccz6",
   "label": "utente esterno",
   "labelPosition": "Left",
-  "leftColumn": 7,
+  "leftColumn": 4,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "mobileBottomRow": 43,
@@ -38,5 +38,5 @@
   "type": "SWITCH_WIDGET",
   "version": 1,
   "widgetId": "oqq7rvvc26",
-  "widgetName": "Switch1"
+  "widgetName": "sw_dominio"
 }

@@ -7,10 +7,10 @@ export default {
 	},
 
 	generatePasswordHash: async () => {
-		return dcodeIO.bcrypt.hashSync(inp_registerPassword.text, 10);
+		return dcodeIO.bcrypt.hashSync(inp_password.text, 10);
 	},
 
-	verifyHash: async (password, hash) => {
+	verifyHash: (password, hash) => {
 		return dcodeIO.bcrypt.compareSync(password, hash)
 	},
 
@@ -18,16 +18,18 @@ export default {
 		return jsonwebtoken.sign(user, 'secret', {expiresIn: 60*60});
 	},
 
-	signIn: async () => {
+	 signIn: async () => {
 		const password = inp_password.text;
+		//await this.generatePasswordHash();
 
-		const [user] = await findUserByEmail.run();
-
-		if (user && this.verifyHash(password, user?.password_hash)) {
+		let user = (await getUserFromIdAndDomain.run())[0];
+		 console.log("USER");
+		 console.log(user);
+		
+		if (this.verifyHash(password, user?.password_hash)) {
 			storeValue('token', await this.createToken(user))
-				.then(() => updateLogin.run({
-				id: user.id
-			}))
+				//.then(() => updateLogin.run({id: user.id})
+				//		 )
 				.then(() => showAlert('Register Success', 'success'))
 		} else {
 			return showAlert('Invalid emaill/password combination', 'error');
@@ -35,13 +37,6 @@ export default {
 	},
 
 	register: async () => {
-		const passwordHash = await this.generatePasswordHash();
-		const [user] = await createUser.run({passwordHash});
-		if (user) {
-			storeValue('token', await this.createToken(user))
-			showAlert('Register Success', 'success');
-		} else {
-			return showAlert('Error creating new user', 'error');
-		}
+
 	},
 }
