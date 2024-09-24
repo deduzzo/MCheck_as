@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66ec903bbf3458523e79593d_e5059f94-4d5c-4265-928e-cdda3145592f",
+  "id": "Page1_sessionData",
+  "unpublishedCollection": {
+    "name": "sessionData",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "distretto",
+        "value": "appsmith.store.DISTRETTO_CORRENTE"
+      },
+      {
+        "name": "user_id",
+        "value": "appsmith.store.USER_ID"
+      }
+    ]
+  }
+}

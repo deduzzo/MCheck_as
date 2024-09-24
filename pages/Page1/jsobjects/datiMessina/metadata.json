@@ -9,23 +9,23 @@
     "variables": [
       {
         "name": "distretti",
-        "value": "{\n  1: \"Messina\",\n  3: \"Taormina\",\n  4: \"Milazzo\",\n  5: \"Lipari\",\n  6: \"Barcellona\",\n  7: \"Patti\",\n  8: \"Mistretta\",\n  9: \"S.Agata\"\n}"
+        "value": "appsmith.store.MESSINA_DISTRETTI"
       },
       {
         "name": "distrettiByKeyword",
-        "value": "{\n  \"messina\": datiMessina.distretti[1],\n  \"taormina\": datiMessina.distretti[3],\n  \"milazzo\": datiMessina.distretti[4],\n  \"lipari\": datiMessina.distretti[5],\n  \"barcellona\": datiMessina.distretti[6],\n  \"patti\": datiMessina.distretti[7],\n  \"mistretta\": datiMessina.distretti[8],\n  \"agata\": datiMessina.distretti[9]\n}"
+        "value": "appsmith.store.MESSINA_DISTRETTI_BY_KEYWORD"
       },
       {
         "name": "recapitiDistretti",
-        "value": "{\n  1: [\"convest.menord@asp.messina.it\", \"distretto.mesud@asp.messina.it\"],\n  3: [\"distretto.taormina@asp.messina.it\", \"specialistica.taormina@asp.messina.it\"],\n  4: [\"distretto.milazzo@asp.messina.it\", \"rosangela.basile@asp.messina.it\"],\n  5: [\"distretto.lipari@asp.messina.it\"],\n  6: [\"distretto.barcellona@asp.messina.it\"],\n  7: [\"distretto.patti@asp.messina.it\", \"g.catania@asp.messina.it\"],\n  8: [\"distretto.mistretta@asp.messina.it\"],\n  9: [\"distretto.sagata@asp.messina.it\"]\n}"
+        "value": "appsmith.store.MESSINA_RECAPITI_DISTRETTI"
       },
       {
         "name": "comuniDistretti",
-        "value": "{\n  \"083027\": 1,\n  \"083048\": 1,\n  \"083072\": 1,\n  \"083076\": 1,\n  \"083094\": 1,\n  \"083105\": 1,\n  \"083061\": 1,\n  \"083032\": 3,\n  \"083090\": 3,\n  \"083089\": 3,\n  \"083097\": 3,\n  \"083017\": 3,\n  \"083049\": 4,\n  \"083064\": 4,\n  \"083098\": 4,\n  \"083104\": 4,\n  \"083077\": 4,\n  \"083041\": 5,\n  \"083005\": 6,\n  \"083106\": 6,\n  \"083028\": 6,\n  \"083033\": 7,\n  \"083007\": 7,\n  \"083066\": 7,\n  \"083095\": 7,\n  \"083039\": 7,\n  \"083052\": 8,\n  \"083091\": 8,\n  \"083001\": 9,\n  \"083060\": 9,\n  \"083009\": 9,\n  \"083084\": 9,\n  \"083099\": 9,\n  \"083010\": 9,\n  \"083078\": 9,\n  \"083011\": 9,\n  \"083014\": 9,\n  \"083108\": 9\n}"
+        "value": "appsmith.store.MESSINA_COMUNI_DISTRETTI"
       },
       {
         "name": "listaPrestazioniVolumi",
-        "value": "[\"897\", \"8901\", \"8913\", \"9502\", \"8926\", \"87371\", \"87372\", \"8741\", \"88011\", \"88012\", \"88013\", \"88014\", \"88015\", \"88016\", \"8703\", \"88381\", \"88382\", \"88385\", \"88911\", \"88912\", \"88954\", \"88955\", \"8893\", \"88714\", \"88723\", \"88735\", \"88741\", \"88751\", \"88761\", \"88731\", \"88732\", \"8878\", \"88772\", \"4523\", \"4542\", \"4524\", \"4513\", \"4516\", \"8952\", \"8950\", \"8941\", \"8944\", \"95411\", \"89371\", \"89372\", \"9511\", \"93081\"]"
+        "value": "appsmith.store.MESSINA_LISTA_PRESTAZIONI_VOLUMI"
       }
     ]
   }
