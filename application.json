@@ -32,11 +32,11 @@
   "pages": [
     {
       "id": "Page1",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "HomePage",
-      "isDefault": false
+      "isDefault": true
     }
   ],
   "unpublishedAppLayout": {
