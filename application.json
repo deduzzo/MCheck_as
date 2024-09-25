@@ -31,7 +31,7 @@
   "evaluationVersion": 2,
   "pages": [
     {
-      "id": "Authentication",
+      "id": "Login",
       "isDefault": true
     },
     {

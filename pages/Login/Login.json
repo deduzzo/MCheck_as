@@ -27,7 +27,7 @@
         }
       }
     ],
-    "name": "Authentication",
-    "slug": "authentication"
+    "name": "Login",
+    "slug": "login"
   }
 }

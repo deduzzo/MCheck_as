@@ -1,6 +1,6 @@
 {
   "gitSyncId": "66ec903bbf3458523e79593d_17e6e948-6c58-4df9-83ac-d05220ec944f",
-  "id": "Authentication_loginInternal",
+  "id": "Login_loginInternal",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -53,7 +53,7 @@
     ],
     "executeOnLoad": false,
     "name": "loginInternal",
-    "pageId": "Authentication",
+    "pageId": "Login",
     "userSetOnLoad": false
   }
 }

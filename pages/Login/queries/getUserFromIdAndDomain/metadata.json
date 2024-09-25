@@ -1,6 +1,6 @@
 {
   "gitSyncId": "66ec903bbf3458523e79593d_2073c6d3-ccda-452e-90c4-08d90d952186",
-  "id": "Authentication_getUserFromIdAndDomain",
+  "id": "Login_getUserFromIdAndDomain",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -62,6 +62,11 @@
                 "condition": "EQ",
                 "key": "dominio",
                 "value": "{{sw_dominio.isSwitchedOn}}"
+              },
+              {
+                "condition": "EQ",
+                "key": "abilitato",
+                "value": "true"
               }
             ],
             "condition": "AND"
@@ -88,7 +93,7 @@
     ],
     "executeOnLoad": false,
     "name": "getUserFromIdAndDomain",
-    "pageId": "Authentication",
+    "pageId": "Login",
     "userSetOnLoad": false
   }
 }
