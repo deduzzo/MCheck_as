@@ -1,6 +1,11 @@
 export default {
 
+	defaultTab: 'Sign In',
 	secret: "UxZ>69'[Tu<6",
+	
+	setDefaultTab: (newTab) => {
+		this.defaultTab = newTab;
+	},
 	
 	showAlertIfExist: () => {
 		if (appsmith.URL.queryParams.msg)
@@ -24,6 +29,7 @@ export default {
 		let user = (await getUserFromIdAndDomain.run());
 		let error = "";
 		let loginOk = false;
+		const username = inp_username.text.replace("@asp.messina.it","");
 
 		if (user.length > 0) {
 			user = user[0];
@@ -34,7 +40,7 @@ export default {
 		if (sw_dominio.isSwitchedOn) {
 			try {
 				// Prova ad eseguire la query loginInternal
-				internal = await loginInternal.run({username: inp_username.text, password: inp_password.text});
+				internal = await loginInternal.run({username: username, password: inp_password.text});
 				if (!internal || internal.success === false) {
 					error = 'Utente o password non validi nel dominio';
 				}

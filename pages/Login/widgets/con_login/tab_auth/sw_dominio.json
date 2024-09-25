@@ -1,6 +1,6 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "alignWidget": "LEFT",
+  "alignWidget": "RIGHT",
   "animateLoading": true,
   "bottomRow": 43,
   "boxShadow": "none",

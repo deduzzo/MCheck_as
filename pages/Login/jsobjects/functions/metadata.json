@@ -8,6 +8,10 @@
     "pluginType": "JS",
     "variables": [
       {
+        "name": "defaultTab",
+        "value": "'Sign In'"
+      },
+      {
         "name": "secret",
         "value": "\"UxZ>69'[Tu<6\""
       }
