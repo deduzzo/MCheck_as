@@ -23,6 +23,10 @@ export default {
 			storeValue("token",null);
 			navigateTo("Login", {msg: "Sessione scaduta"});
 		}
+	},
+
+	getCurrentMonth: () => {
+		return moment().month() + 1;
 	}
 
 }
