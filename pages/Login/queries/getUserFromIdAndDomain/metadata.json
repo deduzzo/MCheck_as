@@ -91,9 +91,9 @@
         "key": "formData.where.data.children[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "getUserFromIdAndDomain",
     "pageId": "Login",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

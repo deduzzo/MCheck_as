@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "functions.getCurrentMonth",
     "name": "getCurrentMonth",
     "pageId": "HomePage",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

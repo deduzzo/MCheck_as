@@ -65,9 +65,9 @@
         "key": "bodyFormData[0].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "uploadFileToGdrive",
     "pageId": "Page1",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "functions.checkToken",
     "name": "checkToken",
     "pageId": "HomePage",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

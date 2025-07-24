@@ -63,9 +63,9 @@
         "key": "queryParameters[2].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "gerAllFilesAndFolderGdrive",
     "pageId": "Page1",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

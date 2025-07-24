@@ -33,10 +33,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "calcolaFlussi.ottieniStatDaFileFlussoM",
     "name": "ottieniStatDaFileFlussoM",
     "pageId": "Page1",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

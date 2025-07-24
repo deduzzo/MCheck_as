@@ -86,9 +86,9 @@
         "key": "formData.where.data.children[1].value"
       }
     ],
-    "executeOnLoad": false,
     "name": "getConsegneMeseAnno",
     "pageId": "HomePage",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
